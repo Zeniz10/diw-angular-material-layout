@@ -11,8 +11,8 @@ export class RegistrationComponent {
   sizes = ['XS', 'S', 'M', 'L', 'XL'];
 
   // Datos de ejemplo para la persona
-  model = new Person(1, "Antonio Gabriel", "González Casado", 
-                    "prof.antoniogabriel@iesalixar.org", this.sizes[2], "CAIRS");
+  model = new Person(1, "David", "Martínez Merencio", 
+                    "alum.dmartinezm.2022@iesalixar.org", this.sizes[2], "CAIRS");
 
   // Control de Formulario enviado por defecto a falso
   submitted = false;
