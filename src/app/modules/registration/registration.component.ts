@@ -17,7 +17,7 @@ export class RegistrationComponent {
   // Control de Formulario enviado por defecto a falso
   submitted = false;
 
-  // Una vez que el formulario se envía entonces se establece a enviado. 
+  // Una vez que el formulario se envía entonces se establece a enviado.
   onSubmit() { this.submitted = true; }
 
   // Método para inicializar una nueva persona:
