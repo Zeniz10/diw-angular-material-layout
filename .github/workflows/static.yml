@@ -1,0 +1,22 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  push:
+    branches:
+      # Rama donde al hacer push se lanzará el action
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Despliegue de la aplicación Angular en la rama gh-pages
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
+      with:
+        github_access_token: ${{ secrets.ACCESS_TOKEN }}
+        buid_configuration: production
+        base_href: /diw-angular-material-layout/
+        deploy_branch: gh-pages
+        angular_dist_build_folder: dist/diw-angular-material-layout
